@@ -40,16 +40,16 @@ end
 
 
 def total_gross(source)
-counter = 0 
-total_gross = 0 
-result = directors_totals(source)
-directors = list_of_directors(source)
+  counter = 0 
+  total_gross = 0 
+  result = directors_totals(source)
+  directors = list_of_directors(source)
 
-while counter < directors.length do 
-  total_gross += result[directors[counter]]
-  counter += 1 
-end
-total_gross
+  while counter < directors.length do 
+    total_gross += result[directors[counter]]
+    counter += 1 
+  end
+  total_gross
 end
   # Write this implementation
   #
