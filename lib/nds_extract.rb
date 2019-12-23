@@ -48,8 +48,6 @@ while row_index < names.length do
   total_gross += d_totals[names[row_index]]
   row_index += 1 
 end
-total_gross
-end
 
   
   # Write this implementation
