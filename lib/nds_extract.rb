@@ -37,19 +37,20 @@ def list_of_directors(source)
   directors
 end
 
+
+
 def total_gross(source)
-  row_index = 0 
-  total_gross = 0 
-  names = list_of_directors(source)
-  d_totals = directors_totals(source)
-  
+counter = 0 
+total_gross = 0 
+result = directors_totals(source)
+directors = list_of_directors(source)
 
-while row_index < names.length do
-  total_gross += d_totals[names[row_index]]
-  row_index += 1 
+while counter < directors.length do 
+  total_gross += result[directors[counter]]
+  counter += 1 
 end
-
-  
+total_gross
+end
   # Write this implementation
   #
   # Should use methods:
