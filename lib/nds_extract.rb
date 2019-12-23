@@ -40,8 +40,8 @@ end
 def total_gross(source)
   row_index = 0 
   total_gross = 0 
-  names = list_of_directors(directors_database)
-  d_totals = directors_totals(directors_database)
+  names = list_of_directors(source)
+  d_totals = directors_totals(source)
   
 
 while row_index < names.length do
