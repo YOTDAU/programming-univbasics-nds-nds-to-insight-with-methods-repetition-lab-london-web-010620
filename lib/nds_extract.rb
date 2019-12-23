@@ -38,13 +38,13 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  list = list_of_directors(source)
+  names = list_of_directors(source)
   d_totals = directors_totals(source)
   row_index = 0 
   total_gross = 0 
 
 while row_index < list.length do
-  total_gross += source[list[row_index]]
+  total_gross += source[names[row_index]]
   row_index += 1 
 end
 
