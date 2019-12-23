@@ -38,19 +38,17 @@ def list_of_directors(source)
 end
 
 
-
 def total_gross(source)
-  counter = 0 
+  row_index = 0 
   total_gross = 0 
-  result = directors_totals(source)
-  directors = list_of_directors(source)
+  names = list_of_directors(source)
+  d_totals = directors_totals(source)
+  
 
-  while counter < directors.length do 
-    total_gross += result[directors[counter]]
-    counter += 1 
+  while row_index < names.length do
+    total_gross += d_totals[names[row_index]]
+    row_index += 1 
   end
-  total_gross
-end
   # Write this implementation
   #
   # Should use methods:
@@ -61,4 +59,4 @@ end
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
 
-
+end
