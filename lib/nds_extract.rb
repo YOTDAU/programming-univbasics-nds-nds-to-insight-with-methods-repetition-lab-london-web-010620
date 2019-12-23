@@ -2,7 +2,6 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
 
 pp directors_database
-pp pry 
 
 def directors_totals(source)
   result = {}
