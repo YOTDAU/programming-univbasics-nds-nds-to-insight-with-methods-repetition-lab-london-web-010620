@@ -43,7 +43,7 @@ def total_gross(source)
   row_index = 0 
   total_gross = 0 
 
-while row_index < list.length do
+while row_index < names.length do
   total_gross += source[names[row_index]]
   row_index += 1 
 end
