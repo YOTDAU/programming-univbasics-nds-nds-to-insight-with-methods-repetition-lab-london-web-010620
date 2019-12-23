@@ -49,6 +49,8 @@ def total_gross(source)
     total_gross += names[d_totals[row_index]]
     row_index += 1 
   end
+  return total_gross
+  
   # Write this implementation
   #
   # Should use methods:
