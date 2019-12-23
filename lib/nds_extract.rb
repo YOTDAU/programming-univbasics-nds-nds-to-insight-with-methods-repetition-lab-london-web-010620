@@ -46,7 +46,7 @@ def total_gross(source)
   
 
   while row_index < d_totals.length do
-    total_gross += names[d_totals[row_index]]
+    total_gross += d_totals[names[row_index]]
     row_index += 1 
   end
   return total_gross
